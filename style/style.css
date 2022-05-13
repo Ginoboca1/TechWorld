@@ -1,4 +1,5 @@
 /* Global */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;500&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +7,7 @@
   }
   
   body {
-    font-family: "Oswald", sans-serif;
+    font-family: "Outfit", sans-serif;
     background-color: #000000;
     /* Pattern from https://www.heropatterns.com/ */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -41,6 +42,7 @@
   
   .nav-brand {
     width: 50px;
+    border-radius: 50%;
   }
   
   /* Navbar Left */
@@ -110,6 +112,14 @@
     margin-bottom: 20px;
     color: #fff;
   }
+
+  .showcase h2{
+    font-weight: 400;
+  }
+
+  .showcase p{
+    font-weight: 300;
+  }
   
   .showcase h2,
   .showcase p {
@@ -126,15 +136,18 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin: 70px 0;
+    font-weight: 300;
   }
   
   .news-cards img {
     width: 100%;
-    height: 180px;
+    height: 200px;
+    border: solid white 3px;
   }
   
   .news-cards h3 {
     font-size: 20px;
+   font-weight: 400;
     margin: 10px 0;
   }
   
@@ -153,6 +166,7 @@
     background: url("../images/gettyimages-streaming-tv.jpeg.webp");
     margin-bottom: 40px;
     background-position: center;
+    border: #f2f2f2 solid 3px;
   }
   
   .cards-banner-one .content {
@@ -164,6 +178,7 @@
   .cards-banner-one p,
   .cards-banner-two p {
     margin: 10px 0 20px 0;
+    font-weight: 300;
   }
   
   /* CARDS BANNER TWO*/
@@ -172,6 +187,7 @@
     height: 350px;
     background: url("../images/baires.jpg") no-repeat center center/cover;
     background-position: center;
+    border: solid #f2f2f2 3px;
   }
   
   .cards-banner-two .content {
